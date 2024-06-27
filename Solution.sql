@@ -58,6 +58,7 @@ JOIN gym1 on membership_id = gym1.id)
 , sol as(
 SELECT person_id, name
 from gym2)
+  /* Jeremy Bowers */
 
 --Culprit interview
 , in2 as(
@@ -80,4 +81,6 @@ JOIN person on dl.id = person.license_id
 JOIN income on person.ssn = income.ssn
 JOIN sym on person.id = sym.person_id
 WHERE car_make = 'Tesla' AND car_model='Model S'
-AND gender = 'female' AND hair_color = 'red'            
+AND gender = 'female' AND hair_color = 'red'   
+/* Miranda Priestly */
+
